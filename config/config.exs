@@ -31,20 +31,6 @@ config :grapher, GrapherWeb.Endpoint,
 # at the `config/runtime.exs`.
 config :grapher, Grapher.Mailer, adapter: Swoosh.Adapters.Local
 
-config :prometheus, Grapher.PrometheusExporter,
-  path: "/metrics",
-  format: :auto
-
-config :prometheus, Grapher.PipelineInstrumenter,
-  duration: :histogram,
-  buckets: [100, 300, 500, 750, 1000, 1500, 2000, 3000, 5000],
-  labels: [:method, :route, :status_code]
-
-config :prometheus, Grapher.RepoInstrumenter,
-  duration: :histogram,
-  buckets: [100, 300, 500, 750, 1000, 1500, 2000, 3000, 5000],
-  labels: [:query, :source]
-
 # Configure esbuild (the version is required)
 config :esbuild,
   version: "0.17.11",

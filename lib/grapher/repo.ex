@@ -3,6 +3,4 @@ defmodule Grapher.Repo do
     otp_app: :grapher,
     adapter: Ecto.Adapters.Postgres
 
-    use Prometheus.EctoInstrumenter
-
 end

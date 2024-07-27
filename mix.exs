@@ -60,8 +60,6 @@ defmodule Grapher.MixProject do
       {:bandit, "~> 1.2"},
       {:absinthe, "~> 1.6"},
       {:absinthe_plug, "~> 1.5"},
-      {:prometheus_ex, "~> 3.1.0"},
-      {:telemetry_metrics_prometheus, "~> 1.1.0"},
       {:cors_plug, "~> 3.0"}
     ]
   end
